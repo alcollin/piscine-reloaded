@@ -1,25 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alcollin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/03 17:25:46 by alcollin          #+#    #+#             */
-/*   Updated: 2016/11/04 10:36:03 by alcollin         ###   ########.fr       */
+/*   Created: 2016/11/04 09:30:51 by alcollin          #+#    #+#             */
+/*   Updated: 2016/11/04 09:36:50 by alcollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
-void	ft_putstr(char *str)
-{
-	int		i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
-}
+# define ABS(x) (x < 0 ? -x : x)
+#endif
